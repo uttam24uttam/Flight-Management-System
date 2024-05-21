@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Airsystem {
 
-   // Set JDBC driver name and database URL
+   
    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
    static final String DB_URL = "jdbc:mysql://localhost:3306/Airsystem?useSSL=false";
 
@@ -43,14 +43,12 @@ public class Airsystem {
          return;
       }
 
-      // STEP 2. Connecting to the Database
+      //Connecting to the Database
       try {
-         // STEP 2a: Register JDBC driver
+         
          Class.forName(JDBC_DRIVER);
-         // STEP 2b: Open a connection
          System.out.println("Connecting to database...");
          conn = DriverManager.getConnection(DB_URL, USER, PASSWORD);
-         // STEP 2c: Execute a query
          System.out.println("Creating statement...");
          stmt = conn.createStatement();
 
@@ -514,13 +512,13 @@ public class Airsystem {
 
          if (result != 0) {
             System.out.println("Feedback submitted successfully!\n");
-            conn.commit(); // Commit the transaction if successful
+            conn.commit(); // Commit 
          } else {
             System.out.println("Error! Try again.\n");
          }
       } catch (Exception e) {
          try {
-            conn.rollback(); // Rollback the transaction if an exception occurs
+            conn.rollback(); // Rollback 
             System.out.println("Transaction rolled back!.");
          } catch (SQLException rollbackException) {
             rollbackException.printStackTrace();
@@ -612,7 +610,6 @@ public class Airsystem {
 
 // COMMANDS TO RUN
 
-// export CLASSPATH='/home/uttam/Documents/IIITB/sem4/DBMS project/JDBC-tutorial
-// (4)/JDBC-tutorial/mysql-connector-j-8.3.0.jar:.'
+// export CLASSPATH='/home/uttam/Documents/IIITB/sem4/DBMS project/JDBC-tutorial(4)/JDBC-tutorial/mysql-connector-j-8.3.0.jar:.'
 // javac Airsystem.java
 // java Airsystem
