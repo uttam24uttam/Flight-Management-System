@@ -1,6 +1,6 @@
 **************Flight Management System JDBC Project***************
 
-This Java-based project implements a Flight Management System using JDBC to interact with a MySQL database. It allows users to manage flight and passenger information, book flights, and provide service feedback. It connects to a MySQL database using JDBC, utilizing the MySQL JDBC driver. It stores and retrieves data related to flights, passengers, and bookings by executing SQL queries .
+This project implements a Flight Management System using JDBC to interact with a MySQL database. It allows users to manage flight and passenger information, book flights, and provide service feedback. It connects to a MySQL database using JDBC, utilizing the MySQL JDBC driver. It stores and retrieves data related to flights, passengers, and bookings by executing SQL queries .
 
 Features
     •  User Authentication : Simple login system to ensure authorized access.
