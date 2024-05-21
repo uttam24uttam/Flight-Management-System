@@ -9,8 +9,8 @@ public class Airsystem {
    static final String DB_URL = "jdbc:mysql://localhost:3306/Airsystem?useSSL=false";
 
    // Database credentials
-   static final String USER = "root";// add your user
-   static final String PASSWORD = "admin";// add password
+   static final String USER = "root";
+   static final String PASSWORD = "admin";
 
    public static void main(String[] args) {
       Connection conn = null;
